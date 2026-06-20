@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags -->
+    <title>La Catrina Mexican Restaurant | Authentic Gastronomy</title>
+    <meta name="description" content="Experience the vibrant and authentic Mexican cuisine at La Catrina Mexican Restaurant. A perfect blend of culinary tradition, art, and bold flavors.">
+    <meta name="keywords" content="mexican restaurant, comida mexicana, la catrina, dia de muertos, authentic mexican food, tacos, margaritas, mexican cuisine">
+    <link rel="canonical" href="https://lacatrinamexicanrestaurant.online/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lacatrinamexicanrestaurant.online/">
+    <meta property="og:title" content="La Catrina Mexican Restaurant | Authentic Gastronomy">
+    <meta property="og:description" content="Experience the vibrant and authentic Mexican cuisine at La Catrina Mexican Restaurant.">
+    <meta property="og:image" content="https://res.cloudinary.com/dzklt0a5u/image/upload/v1781977299/IMG-20260423-WA0044_1_hixaey.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lacatrinamexicanrestaurant.online/">
+    <meta property="twitter:title" content="La Catrina Mexican Restaurant | Authentic Gastronomy">
+    <meta property="twitter:description" content="Experience the vibrant and authentic Mexican cuisine at La Catrina Mexican Restaurant.">
+    <meta property="twitter:image" content="https://res.cloudinary.com/dzklt0a5u/image/upload/v1781977299/IMG-20260423-WA0044_1_hixaey.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" id="favicon" type="image/png" href="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_250/v1781977101/LOGO_7_twzjgf.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* * LA CATRINA - DÍA DE MUERTOS THEME
+         * Deep warm colors, Cempasúchil orange, Bone white, Papel Picado accents
+         */
+        
+        :root {
+            --color-primary: #f27405; /* Cempasúchil Orange */
+            --color-primary-hover: #d96304;
+            --color-secondary: #bf1558; /* Mexican Pink / Magenta */
+            --color-background: #14100e; /* Deep Charcoal/Brown */
+            --color-surface: #1e1815; /* Slightly lighter surface */
+            --color-surface-light: #2c231f;
+            --color-text-dark: #fcf5f2; /* Off-white */
+            --color-text-light: #d9c8bd; /* Muted text */
+            --color-white: #ffffff;
+            --color-footer: #0a0807;
+            --color-border: #3d312b;
+            
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Lora', Arial, sans-serif;
+            
+            --shadow-elegant: 0 10px 30px rgba(0, 0, 0, 0.5);
+            --shadow-glow: 0 0 20px rgba(242, 116, 5, 0.3);
+            --border-radius: 8px;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--color-text-dark);
+            background-color: var(--color-background);
+            overflow-x: hidden;
+            /* Día de Muertos Sugar Skull subtle pattern */
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23f27405' fill-opacity='0.03' d='M256 0C150 0 64 86 64 192c0 62.4 29.5 118.6 74.3 154.5v101.5c0 35.3 28.7 64 64 64h107.3c35.3 0 64-28.7 64-64V346.5C418.5 310.6 448 254.4 448 192 448 86 362 0 256 0zm-72 256c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm144 0c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zM256 320c-26.5 0-48 21.5-48 48H184c0-39.8 32.2-72 72-72s72 32.2 72 72h-24c0-26.5-21.5-48-48-48z'/%3E%3C/svg%3E");
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Calavera Divider */
+        .artistic-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .artistic-divider::before,
+        .artistic-divider::after {
+            content: '';
+            height: 1px;
+            width: 60px;
+            background: linear-gradient(to right, transparent, var(--color-primary), transparent);
+        }
+
+        .artistic-divider svg {
+            width: 35px;
+            height: 35px;
+            fill: var(--color-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .artistic-divider:hover svg {
+            transform: scale(1.15);
+            fill: var(--color-secondary);
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(20, 16, 14, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--color-border);
+            transition: var(--transition-smooth);
+        }
+
+        .navbar.scrolled {
+            padding: 12px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            background-color: rgba(20, 16, 14, 0.98);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-family: var(--font-serif);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-primary);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-family: var(--font-sans);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--color-text-dark);
+            letter-spacing: 1.5px;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link:hover {
+            color: var(--color-primary);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-left: 15px;
+            padding-left: 25px;
+            border-left: 1px solid var(--color-border);
+        }
+
+        .lang-btn {
+            cursor: pointer;
+            font-size: 13px;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+        }
+
+        .lang-btn.active {
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .lang-btn.inactive {
+            font-weight: 400;
+            color: var(--color-text-light);
+        }
+
+        .lang-btn.inactive:hover {
+            color: var(--color-white);
+        }
+
+        .navbar-toggler {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            z-index: 1001;
+        }
+
+        .toggler-icon {
+            width: 30px;
+            height: 2px;
+            background-color: var(--color-primary);
+            transition: var(--transition-smooth);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1920/v1777151404/yiebnrm6l10wizbcdbp2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at center, rgba(20, 16, 14, 0.4) 0%, rgba(20, 16, 14, 0.85) 100%);
+            z-index: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        /* Papel Picado SVG Banner at the bottom of Hero */
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -1px; left: 0; right: 0;
+            height: 60px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='60' viewBox='0 0 400 60'%3E%3Cpath d='M0 10 Q 50 20 100 10 T 200 10 T 300 10 T 400 10' fill='none' stroke='%23ffffff' stroke-width='1' opacity='0.3'/%3E%3Cg transform='translate(10, 10)'%3E%3Cpath d='M0 0 H 60 V 40 L 50 30 L 40 40 L 30 30 L 20 40 L 10 30 L 0 40 Z' fill='%23bf1558'/%3E%3Ccircle cx='30' cy='15' r='5' fill='%2314100e'/%3E%3Ccircle cx='15' cy='25' r='3' fill='%2314100e'/%3E%3Ccircle cx='45' cy='25' r='3' fill='%2314100e'/%3E%3C/g%3E%3Cg transform='translate(90, 10)'%3E%3Cpath d='M0 0 H 60 V 40 L 50 30 L 40 40 L 30 30 L 20 40 L 10 30 L 0 40 Z' fill='%23f27405'/%3E%3Ccircle cx='30' cy='15' r='5' fill='%2314100e'/%3E%3Crect x='25' y='20' width='10' height='10' fill='%2314100e' transform='rotate(45 30 25)'/%3E%3C/g%3E%3Cg transform='translate(170, 10)'%3E%3Cpath d='M0 0 H 60 V 40 L 50 30 L 40 40 L 30 30 L 20 40 L 10 30 L 0 40 Z' fill='%236a1b9a'/%3E%3Ccircle cx='30' cy='15' r='5' fill='%2314100e'/%3E%3Ccircle cx='15' cy='25' r='3' fill='%2314100e'/%3E%3Ccircle cx='45' cy='25' r='3' fill='%2314100e'/%3E%3C/g%3E%3Cg transform='translate(250, 10)'%3E%3Cpath d='M0 0 H 60 V 40 L 50 30 L 40 40 L 30 30 L 20 40 L 10 30 L 0 40 Z' fill='%23fbc02d'/%3E%3Ccircle cx='30' cy='15' r='5' fill='%2314100e'/%3E%3Crect x='25' y='20' width='10' height='10' fill='%2314100e' transform='rotate(45 30 25)'/%3E%3C/g%3E%3Cg transform='translate(330, 10)'%3E%3Cpath d='M0 0 H 60 V 40 L 50 30 L 40 40 L 30 30 L 20 40 L 10 30 L 0 40 Z' fill='%2300acc1'/%3E%3Ccircle cx='30' cy='15' r='5' fill='%2314100e'/%3E%3Ccircle cx='15' cy='25' r='3' fill='%2314100e'/%3E%3Ccircle cx='45' cy='25' r='3' fill='%2314100e'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: repeat-x;
+            z-index: 5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: var(--color-white);
+            padding: 0 20px;
+            max-width: 1000px;
+            margin-top: 60px;
+        }
+
+        .hero-logo-container {
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .hero-logo-container::after {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px; height: 180px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(242,116,5,0.25) 0%, rgba(191,21,88,0.1) 40%, rgba(0,0,0,0) 70%);
+            z-index: -1;
+            filter: blur(15px);
+        }
+
+        .hero-logo {
+            max-height: 150px;
+            width: auto;
+            display: block;
+            margin: 0 auto;
+            filter: drop-shadow(0 5px 20px rgba(0,0,0,0.6));
+            transition: transform 0.6s ease;
+        }
+        
+        .hero-logo:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-sans);
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--color-primary);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: 85px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 40px;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+            letter-spacing: 2px;
+        }
+
+        .hero-title span {
+            color: var(--color-secondary);
+            font-style: italic;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .hero-address {
+            font-family: var(--font-sans);
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--color-text-light);
+            margin-top: 20px;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .hero-address::before {
+            content: "📍";
+            font-size: 18px;
+        }
+
+        /* Standard Buttons Configuration for Menutech Overrides */
+        menutech-orders::part(button) {
+            border-radius: 50px !important;
+            padding: 15px 45px !important;
+            font-family: var(--font-sans) !important;
+            font-weight: 700 !important;
+            letter-spacing: 1.5px !important;
+            text-transform: uppercase !important;
+            transition: var(--transition-smooth) !important;
+            border: 2px solid transparent !important;
+            box-shadow: var(--shadow-elegant) !important;
+        }
+
+        menutech-orders::part(button):hover {
+            background-color: var(--color-primary-hover) !important;
+            box-shadow: var(--shadow-glow) !important;
+            transform: translateY(-3px) !important;
+        }
+
+        /* Section Global Styles */
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--color-text-dark);
+            margin-bottom: 15px;
+            position: relative;
+            line-height: 1.2;
+        }
+
+        .section-title.centered {
+            text-align: center;
+        }
+
+        .section-title span {
+            color: var(--color-primary);
+            font-style: italic;
+        }
+
+        .section-subtitle-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        .section-subtitle-container.centered {
+            justify-content: center;
+        }
+
+        .line-small {
+            width: 40px;
+            height: 2px;
+            background-color: var(--color-primary);
+        }
+
+        .section-subtitle {
+            font-family: var(--font-sans);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--color-primary);
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: var(--color-background);
+            position: relative;
+        }
+
+        /* Large Calavera Watermark */
+        .catrina-watermark {
+            position: absolute;
+            right: -5%;
+            top: 10%;
+            width: 450px;
+            height: 450px;
+            z-index: 0;
+            opacity: 0.04;
+            pointer-events: none;
+            fill: var(--color-white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-text p {
+            color: var(--color-text-light);
+            margin-bottom: 20px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .about-text p:first-of-type::first-letter {
+            font-family: var(--font-serif);
+            font-size: 65px;
+            color: var(--color-secondary);
+            float: left;
+            line-height: 1;
+            margin-right: 12px;
+            margin-top: 5px;
+        }
+
+        .about-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            position: relative;
+        }
+        
+        .about-images::before {
+            content: '';
+            position: absolute;
+            top: -20px; left: -20px;
+            width: 150px; height: 150px;
+            border: 2px solid var(--color-primary);
+            z-index: 0;
+            border-radius: var(--border-radius);
+            opacity: 0.5;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-elegant);
+            position: relative;
+            z-index: 1;
+            transition: var(--transition-smooth);
+        }
+
+        .about-image:nth-child(2) {
+            transform: translateY(40px);
+            border: 1px solid rgba(191,21,88,0.3); /* subtle magenta border */
+        }
+
+        .about-image:hover {
+            transform: scale(1.03) translateY(0);
+            box-shadow: var(--shadow-glow);
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            background-color: var(--color-surface);
+            position: relative;
+        }
+        
+        .gallery-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--color-border), transparent);
+        }
+
+        #gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .gallery-img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            filter: brightness(0.85);
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+            box-shadow: var(--shadow-glow);
+        }
+
+        /* Info Section */
+        .info-section {
+            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1920/v1777151404/yiebnrm6l10wizbcdbp2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            color: var(--color-white);
+        }
+
+        .info-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(20, 16, 14, 0.92);
+            backdrop-filter: blur(3px);
+        }
+
+        .info-box {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(30, 24, 21, 0.85);
+            padding: 60px;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(191, 21, 88, 0.3); /* Magenta accent */
+            box-shadow: var(--shadow-elegant);
+            text-align: center;
+        }
+
+        .info-box .section-title {
+            color: var(--color-white);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .info-item {
+            position: relative;
+            padding: 20px;
+        }
+        
+        .info-item::after {
+            content: '';
+            position: absolute;
+            right: -20px; top: 10%;
+            height: 80%; width: 1px;
+            background: linear-gradient(to bottom, transparent, var(--color-border), transparent);
+        }
+        
+        .info-item:last-child::after {
+            display: none;
+        }
+
+        .info-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px; height: 60px;
+            border-radius: 50%;
+            background-color: rgba(242, 116, 5, 0.1);
+            color: var(--color-primary);
+            margin-bottom: 20px;
+            transition: var(--transition-smooth);
+        }
+        
+        .info-icon:hover {
+            background-color: var(--color-secondary);
+            color: var(--color-white);
+            transform: translateY(-3px);
+        }
+
+        .info-icon svg {
+            width: 28px; height: 28px;
+            fill: currentColor;
+        }
+
+        .info-item h4 {
+            font-family: var(--font-serif);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--color-white);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .info-item p {
+            color: var(--color-text-light);
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: var(--color-footer);
+            padding: 80px 0 30px;
+            color: var(--color-text-light);
+            position: relative;
+            border-top: 2px solid var(--color-secondary);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-title {
+            font-family: var(--font-serif);
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--color-white);
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px; left: 50%;
+            transform: translateX(-50%);
+            width: 30px; height: 2px;
+            background-color: var(--color-primary);
+        }
+
+        .footer-col p {
+            font-size: 15px;
+            line-height: 2;
+            margin-bottom: 10px;
+        }
+
+        .social-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px; height: 45px;
+            border-radius: 50%;
+            background-color: var(--color-surface-light);
+            color: var(--color-text-light);
+            transition: var(--transition-smooth);
+            border: 1px solid transparent;
+        }
+        
+        .social-link:hover {
+            background-color: var(--color-secondary);
+            color: var(--color-white);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 14px;
+            color: rgba(217, 200, 189, 0.5);
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 30px;
+        }
+        
+        .copyright a {
+            color: var(--color-primary);
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
+        
+        .copyright a:hover {
+            color: var(--color-white);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .hero-title { font-size: 70px; }
+            .about-grid { gap: 40px; }
+            .info-box { padding: 40px; }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-toggler { display: flex; }
+            
+            .nav-menu {
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                flex-direction: column;
+                background-color: rgba(20, 16, 14, 0.98);
+                padding: 30px 20px;
+                gap: 25px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+                transform: translateY(-10px);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition-smooth);
+                border-bottom: 1px solid var(--color-border);
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .lang-switch {
+                margin-left: 0;
+                padding-left: 0;
+                border-left: none;
+                border-top: 1px solid var(--color-border);
+                padding-top: 20px;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-title { font-size: 50px; }
+            .hero-subtitle { font-size: 14px; letter-spacing: 2px; }
+            
+            .about-grid { grid-template-columns: 1fr; }
+            .about-images { 
+                order: -1; 
+                margin-bottom: 30px;
+            }
+            .about-image:nth-child(2) { transform: translateY(20px); }
+            .catrina-watermark { right: 50%; transform: translateX(50%); top: 0; width: 300px; height: 300px;}
+
+            #gallery-container { grid-template-columns: repeat(2, 1fr); }
+            
+            .info-grid { 
+                grid-template-columns: 1fr; 
+                gap: 50px;
+            }
+            
+            .info-item::after { display: none; }
+            
+            .footer-grid { 
+                grid-template-columns: 1fr; 
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title { font-size: 40px; }
+            .section-title { font-size: 32px; }
+            .hero-buttons { flex-direction: column; align-items: center; width: 100%; }
+            menutech-orders { width: 100%; max-width: 280px; }
+            menutech-orders::part(button) { width: 100%; }
+            
+            .about-images { grid-template-columns: 1fr; gap: 15px; }
+            .about-image { height: 300px; }
+            .about-image:nth-child(2) { transform: none; }
+            
+            #gallery-container { grid-template-columns: 1fr; }
+            .info-box { padding: 30px 15px; }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-content {
+            animation: fadeInUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--color-background); }
+        ::-webkit-scrollbar-thumb { background: var(--color-surface-light); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--color-primary); }
+    </style>
+
+    <script>
+        // Data integration for La Catrina Mexican Restaurant
+        window.MENU_TECH_STATE = {
+            "cuid": "000000000",
+            "info": {
+                "hours": "Monday through Saturday: 11:00 AM to 9:00 PM Sunday: 12:00 PM to 8:00 PM",
+                "phone": "(607) 442-0037",
+                "address": "208 S Main St, Elmira, NY 14904"
+            },
+            "lang": "en",
+            "ruid": "00000000",
+            "title": "La Catrina",
+            "titles": {
+                "info-title": "Information",
+                "about-title": "Welcome to La Catrina",
+                "gallery-title": "Culinary Masterpieces",
+                "info-subtitle": "Visit Us",
+                "about-subtitle": "Our Tradition",
+                "gallery-subtitle": "A Feast for the Senses"
+            },
+            "contact": {
+                "hours": "Monday through Saturday: 11:00 AM to 9:00 PM Sunday: 12:00 PM to 8:00 PM",
+                "phone": "(607) 442-0037",
+                "address": "208 S Main St, Elmira, NY 14904"
+            },
+            "gallery": [
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1781977327/jenskuvain-ai-generated-8864803_640_lrqxnc.png",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1781977331/roses_street-tacos-8642943_640_kel9jg.png",
+                "https://res.cloudinary.com/dzklt0a5u/image/upload/v1781977335/adoproducciones-chili-5798455_640_nggvth.jpg"
+            ],
+            "heroImg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1781977299/IMG-20260423-WA0044_1_hixaey.jpg",
+            "logoImg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1781977101/LOGO_7_twzjgf.png",
+            "socials": [
+                {"url": "https://www.instagram.com/lacatrinamexicanrestaurante/", "platform": "instagram"},
+                {"url": "https://www.facebook.com/lacatrinamexicanrest?_rdc=1&_rdr#", "platform": "facebook"}
+            ],
+            "showInfo": true,
+            "aboutImg1": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1781977302/IMG-20260423-WA0056_cgbf1v.jpg",
+            "aboutImg2": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1781977304/IMG-20260423-WA0062_1_p0ejhc.jpg",
+            "showAbout": true,
+            "showPromo": false,
+            "showCatering": false,
+            "showDelivery": false,
+            "showGallery": true,
+            "paragraphs": {
+                "about": "At La Catrina Mexican Restaurant, we honor the rich tapestry of Mexican culture through our culinary artistry. Inspired by the vibrant traditions of Día de Muertos, the beauty of the Cempasúchil flower, and the iconic figure of La Catrina, our dishes celebrate life, flavor, and community.\n\nEvery ingredient is carefully selected to ensure authenticity and quality. From the warm, earthy notes of our homemade salsas to the vibrant colors of our garnishes, each plate is a heartfelt tribute to Mexico's ancestral gastronomic heritage.\n\nJoin us for an elegant dining experience where modern culinary techniques meet ancient traditions. Savor the moments that matter, and let our authentic flavors awaken your spirit."
+            },
+            "heroAddress": "208 S Main St, Elmira, NY 14904"
+        };
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="navbar-brand" id="nav-brand">La Catrina</a>
+            
+            <button class="navbar-toggler" id="navbar-toggler" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-es="Inicio" data-en="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-section" class="nav-link" data-es="Nosotros" data-en="About Us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery-section" class="nav-link" data-es="Galería" data-en="Gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#info-section" class="nav-link" data-es="Contacto" data-en="Contact">Contact</a>
+                </li>
+                <li class="lang-switch">
+                    <span id="lang-es" class="lang-btn inactive">ES</span>
+                    <span style="color: var(--color-border);">|</span>
+                    <span id="lang-en" class="lang-btn active">EN</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-logo-container">
+                <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_250/v1781977101/LOGO_7_twzjgf.png" id="hero-logo" alt="La Catrina Logo" class="hero-logo" width="160" height="160">
+            </div>
+            
+            <h2 class="hero-subtitle">
+                <span style="width: 30px; height: 1px; background-color: var(--color-primary);"></span>
+                <span style="width: 30px; height: 1px; background-color: var(--color-primary);"></span>
+            </h2>
+            
+            <h1 class="hero-title" data-es="Auténtico <span>Sabor</span> Mexicano" data-en="Authentic <span>Mexican</span> Flavor">Authentic <span>Mexican</span> Flavor</h1>
+            
+            <div class="hero-buttons">
+                <!-- Script Motor Menutech -->
+                <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
+
+                <!-- Librería Menutech -->
+                <script src="https://menutech.xyz/menutechUI.min.js"></script>
+
+                <!-- Botón de Órdenes -->
+                <menutech-orders id="hero-orders" cuid="000000000" ruid="00000000" background="#f27405" color="#ffffff" data-glf-cuid="000000000" data-glf-ruid="00000000">
+                </menutech-orders>
+
+                <script>
+                    setTimeout(() => { if(window.glfBindButtons) window.glfBindButtons(); }, 1000);
+                </script>
+            </div>
+            
+            <p class="hero-address" id="hero-address">208 S Main St, Elmira, NY 14904</p>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-section section-padding" id="about-section">
+        <!-- Calavera Watermark Background -->
+        <svg class="catrina-watermark" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M256 0C150 0 64 86 64 192c0 62.4 29.5 118.6 74.3 154.5v101.5c0 35.3 28.7 64 64 64h107.3c35.3 0 64-28.7 64-64V346.5C418.5 310.6 448 254.4 448 192 448 86 362 0 256 0zm-72 256c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm144 0c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zM256 320c-26.5 0-48 21.5-48 48H184c0-39.8 32.2-72 72-72s72 32.2 72 72h-24c0-26.5-21.5-48-48-48z"/>
+        </svg>
+        
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-subtitle-container">
+                        <span class="line-small"></span>
+                        <span class="section-subtitle" id="about-subtitle" data-es="Nuestra Tradición" data-en="Our Tradition">Our Tradition</span>
+                    </span>
+                    <h2 class="section-title" id="about-title" data-es="Bienvenidos a La Catrina" data-en="Welcome to La Catrina">Welcome to La Catrina</h2>
+                    
+                    <div class="artistic-divider" style="justify-content: flex-start;">
+                        <!-- Calavera / Sugar Skull SVG -->
+                        <svg viewBox="0 0 512 512">
+                            <path d="M256 0C150 0 64 86 64 192c0 62.4 29.5 118.6 74.3 154.5v101.5c0 35.3 28.7 64 64 64h107.3c35.3 0 64-28.7 64-64V346.5C418.5 310.6 448 254.4 448 192 448 86 362 0 256 0zm-72 256c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm144 0c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zM256 320c-26.5 0-48 21.5-48 48H184c0-39.8 32.2-72 72-72s72 32.2 72 72h-24c0-26.5-21.5-48-48-48z"/>
+                        </svg>
+                    </div>
+
+                    <p id="about-p1">At La Catrina Mexican Restaurant, we honor the rich tapestry of Mexican culture through our culinary artistry. Inspired by the vibrant traditions of Día de Muertos, the beauty of the Cempasúchil flower, and the iconic figure of La Catrina, our dishes celebrate life, flavor, and community.</p>
+                    <p id="about-p2">Every ingredient is carefully selected to ensure authenticity and quality. From the warm, earthy notes of our homemade salsas to the vibrant colors of our garnishes, each plate is a heartfelt tribute to Mexico's ancestral gastronomic heritage.</p>
+                    <p id="about-p3">Join us for an elegant dining experience where modern culinary techniques meet ancient traditions. Savor the moments that matter, and let our authentic flavors awaken your spirit.</p>
+                </div>
+                <div class="about-images">
+                    <img id="about-img-1" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1781977302/IMG-20260423-WA0056_cgbf1v.jpg" alt="Authentic Mexican Dish" class="about-image" loading="lazy" width="400" height="400">
+                    <img id="about-img-2" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1781977304/IMG-20260423-WA0062_1_p0ejhc.jpg" alt="Mexican Culinary Details" class="about-image" loading="lazy" width="400" height="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delicious Mexican Food Section (Gallery) -->
+    <section class="gallery-section section-padding" id="gallery-section">
+        <div class="container">
+            <div style="text-align: center;">
+                <span class="section-subtitle-container centered">
+                    <span class="line-small"></span>
+                    <span class="section-subtitle" id="gallery-subtitle" data-es="Un Festín para los Sentidos" data-en="A Feast for the Senses">A Feast for the Senses</span>
+                    <span class="line-small"></span>
+                </span>
+                <h2 class="section-title centered" id="gallery-title" data-es="Obras Maestras Culinarias" data-en="Culinary Masterpieces">Culinary Masterpieces</h2>
+                
+                <div class="artistic-divider">
+                    <!-- Calavera / Sugar Skull SVG -->
+                    <svg viewBox="0 0 512 512">
+                        <path d="M256 0C150 0 64 86 64 192c0 62.4 29.5 118.6 74.3 154.5v101.5c0 35.3 28.7 64 64 64h107.3c35.3 0 64-28.7 64-64V346.5C418.5 310.6 448 254.4 448 192 448 86 362 0 256 0zm-72 256c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm144 0c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zM256 320c-26.5 0-48 21.5-48 48H184c0-39.8 32.2-72 72-72s72 32.2 72 72h-24c0-26.5-21.5-48-48-48z"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div id="gallery-container">
+                <!-- Dynamically populated by Menutech JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section section-padding" id="info-section">
+        <div class="container">
+            <div class="info-box">
+                <span class="section-subtitle-container centered">
+                    <span class="line-small"></span>
+                    <span class="section-subtitle" id="info-subtitle" data-es="Encuéntranos" data-en="Find Us">Find Us</span>
+                    <span class="line-small"></span>
+                </span>
+                <h2 class="section-title centered" id="info-title" data-es="Información" data-en="Information">Information</h2>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        </div>
+                        <h4 data-es="Horarios" data-en="Opening Hours">Opening Hours</h4>
+                        <p id="info-hours">Monday through Saturday: 11:00 AM to 9:00 PM
+Sunday: 12:00 PM to 8:00 PM</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        </div>
+                        <h4 data-es="Teléfono" data-en="Phone">Phone</h4>
+                        <p id="info-phone">(607) 442-0037</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                        <h4 data-es="Dirección" data-en="Address">Address</h4>
+                        <p id="info-address">208 S Main St, Elmira, NY 14904</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title" data-es="Contáctanos" data-en="Contact Us">Contact Us</h4>
+                    <p id="footer-address">208 S Main St, Elmira, NY 14904</p>
+                    <p id="footer-phone">Phone: (607) 442-0037</p>
+                    <div id="social-icons" class="social-container">
+                        <!-- Social Networks dynamically added here -->
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title" data-es="Horarios" data-en="Opening Hours">Opening Hours</h4>
+                    <p id="footer-hours">Monday - Sunday: 5:00 PM - 10:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; <span id="copyright-year"></span> La Catrina Mexican Restaurant. All Rights Reserved. <br> Powered by <a href="https://menutech.xyz/" target="_blank">Menutech</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* Modern Menutech Data Integration & UI Logic */
+        
+        const optimizeCloudinaryUrl = (url, options = {}) => {
+            if (!url || typeof url !== 'string' || !url.includes('res.cloudinary.com')) return url;
+            const [baseUrl, hash] = url.split('#');
+            if (!baseUrl.includes('/upload/')) return url;
+            const parts = baseUrl.split('/upload/');
+            let transformations = ['f_auto', 'q_auto'];
+            if (options.width) transformations.push(`w_${options.width}`);
+            if (options.height) transformations.push(`h_${options.height}`);
+            if (options.crop) transformations.push(`c_${options.crop}`);
+            const transformationString = transformations.join(',');
+            const optimizedUrl = `${parts[0]}/upload/${transformationString}/${parts[1]}`;
+            return hash ? `${optimizedUrl}#${hash}` : optimizedUrl;
+        };
+
+        const SOCIAL_ICONS = {
+            instagram: `<svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>`,
+            facebook: `<svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:currentColor"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>`,
+            whatsapp: `<svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.81 9.81 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.22 8.22 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.44 0-2.85-.38-4.1-1.11l-.29-.17-3.06.81.82-2.98-.19-.3a8.22 8.22 0 0 1-1.26-4.48c0-4.54 3.7-8.23 8.24-8.23m-3.85 3.09c-.21 0-.45.03-.66.24-.21.21-.81.79-.81 1.94s.84 2.25.96 2.41c.12.16 1.63 2.49 3.96 3.5.55.24 1 .38 1.34.49.56.18 1.07.15 1.48.09.45-.06 1.39-.57 1.58-1.12.2-.55.2-1.02.14-1.12-.06-.1-.21-.16-.45-.27-.24-.12-1.39-.69-1.61-.77-.22-.08-.37-.12-.53.12-.16.24-.61.77-.75.93-.14.16-.27.18-.51.06-.24-.12-.99-.36-1.89-1.16-.7-.62-1.17-1.39-1.31-1.63-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.15.16-.25.24-.42.08-.17.04-.32-.02-.45-.06-.13-.53-1.28-.73-1.75-.19-.48-.39-.41-.53-.42l-.44-.01Z"/></svg>`,
+            twitter: `<svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.48.75 2.78 1.89 3.55-.7 0-1.36-.21-1.94-.53v.05c0 2.05 1.45 3.78 3.39 4.17-.36.1-.74.15-1.13.15-.27 0-.54-.03-.8-.08.54 1.68 2.11 2.9 3.97 2.93-1.46 1.14-3.29 1.82-5.3 1.82-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23Z"/></svg>`
+        };
+
+        let currentLang = 'en';
+
+        function applyLanguage(lang) {
+            currentLang = lang;
+            
+            document.querySelectorAll('[data-es], [data-en]').forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) el.innerHTML = text;
+            });
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            
+            if (esBtn && enBtn) {
+                if (lang === 'es') {
+                    esBtn.className = 'lang-btn active';
+                    enBtn.className = 'lang-btn inactive';
+                } else {
+                    enBtn.className = 'lang-btn active';
+                    esBtn.className = 'lang-btn inactive';
+                }
+            }
+            
+            // Sync dynamic prefix translation for phone
+            const phoneEl = document.getElementById('footer-phone');
+            if (phoneEl && window.MENU_TECH_STATE && window.MENU_TECH_STATE.info) {
+                phoneEl.textContent = (lang === 'es' ? 'Teléfono: ' : 'Phone: ') + (window.MENU_TECH_STATE.info.phone || '');
+            }
+        }
+
+        function updateUI(data) {
+            if (!data) return;
+            window.MENU_TECH_STATE = data;
+
+            // Language
+            if (data.lang) applyLanguage(data.lang);
+
+            // Title
+            if (data.title) {
+                const navBrand = document.getElementById('nav-brand');
+                if (navBrand) navBrand.textContent = data.title;
+            }
+
+            // Logo & Favicon
+            if (data.logoImg) {
+                const logo = document.getElementById('hero-logo');
+                const favicon = document.getElementById('favicon');
+                const optimizedLogo = optimizeCloudinaryUrl(data.logoImg, { width: 300 });
+                if (logo) logo.src = optimizedLogo;
+                if (favicon) favicon.href = optimizedLogo;
+            }
+
+            // Hero Address
+            if (data.heroAddress !== undefined) {
+                const addr = document.getElementById('hero-address');
+                if (addr) addr.textContent = data.heroAddress;
+            }
+
+            // Sections Visibility
+            const sections = {
+                'about-section': data.showAbout !== false,
+                'gallery-section': data.showGallery !== false,
+                'info-section': data.showInfo !== false
+            };
+            
+            Object.keys(sections).forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = sections[id] ? '' : 'none';
+            });
+
+            // Buttons (Menutech Integration)
+            const cuid = data.cuid || '';
+            const ruid = data.ruid || '';
+
+            const ordersBtn = document.querySelector('menutech-orders');
+            if (ordersBtn) {
+                const newOrdersBtn = document.createElement('menutech-orders');
+                newOrdersBtn.setAttribute('cuid', cuid);
+                newOrdersBtn.setAttribute('ruid', ruid);
+                newOrdersBtn.setAttribute('background', '#f27405');
+                newOrdersBtn.setAttribute('color', '#ffffff');
+                newOrdersBtn.setAttribute('data-glf-cuid', cuid);
+                newOrdersBtn.setAttribute('data-glf-ruid', ruid);
+                ordersBtn.parentNode.replaceChild(newOrdersBtn, ordersBtn);
+            }
+
+            if (window.glfBindButtons) window.glfBindButtons();
+
+            // Images Mapping
+            if (data.heroImg) {
+                const heroSection = document.getElementById('hero-section');
+                if (heroSection) heroSection.style.backgroundImage = `url('${optimizeCloudinaryUrl(data.heroImg, { width: 1920 })}')`;
+            }
+
+            if (data.aboutImg1) {
+                const img = document.getElementById('about-img-1');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg1, { width: 600, height: 600, crop: 'fill' });
+            }
+            
+            if (data.aboutImg2) {
+                const img = document.getElementById('about-img-2');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg2, { width: 600, height: 600, crop: 'fill' });
+            }
+
+            // Info Details
+            if (data.info) {
+                const hoursEl = document.getElementById('info-hours');
+                const phoneEl = document.getElementById('info-phone');
+                const addressEl = document.getElementById('info-address');
+
+                if (hoursEl) hoursEl.innerHTML = (data.info.hours || '').replace(/\n/g, '<br>');
+                if (phoneEl) phoneEl.textContent = data.info.phone || '';
+                if (addressEl) addressEl.textContent = data.info.address || '';
+
+                const fHours = document.getElementById('footer-hours');
+                const fPhone = document.getElementById('footer-phone');
+                const fAddress = document.getElementById('footer-address');
+                
+                if (fHours) fHours.innerHTML = (data.info.hours || '').replace(/\n/g, '<br>');
+                if (fPhone) fPhone.textContent = (currentLang === 'es' ? 'Teléfono: ' : 'Phone: ') + (data.info.phone || '');
+                if (fAddress) fAddress.textContent = data.info.address || '';
+            }
+
+            // Social Networks
+            if (data.socials) {
+                const container = document.getElementById('social-icons');
+                if (container) {
+                    container.innerHTML = data.socials.map(s => `
+                        <a href="${s.url}" target="_blank" class="social-link" aria-label="${s.platform}">
+                            ${SOCIAL_ICONS[s.platform] || ''}
+                        </a>
+                    `).join('');
+                }
+            }
+
+            // Gallery Population
+            if (data.gallery) {
+                const container = document.getElementById('gallery-container');
+                if (container) {
+                    container.innerHTML = data.gallery.map(img => `
+                        <img src="${optimizeCloudinaryUrl(img, { width: 500, height: 500, crop: 'fill' })}" class="gallery-img" loading="lazy" alt="Gallery Image">
+                    `).join('');
+                }
+            }
+
+            // Titles Override (Fallback check)
+            if (data.titles) {
+                Object.keys(data.titles).forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el && !el.hasAttribute('data-' + currentLang)) {
+                        el.textContent = data.titles[id];
+                    }
+                });
+            }
+
+            // Paragraphs Override
+            if (data.paragraphs) {
+                const sectionMap = {
+                    about: ['about-p1', 'about-p2', 'about-p3']
+                };
+
+                Object.keys(data.paragraphs).forEach(sectionKey => {
+                    const content = data.paragraphs[sectionKey] || "";
+                    const segments = content.split('\n\n');
+                    const elementIds = sectionMap[sectionKey];
+
+                    if (elementIds) {
+                        elementIds.forEach((id, index) => {
+                            const el = document.getElementById(id);
+                            if (el) {
+                                const segment = segments[index] || "";
+                                el.textContent = segment;
+                                el.style.display = segment.trim() === "" ? "none" : "";
+                            }
+                        });
+                    }
+                });
+            }
+        }
+
+        // Live updating listener
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'UPDATE_CONTENT') {
+                updateUI(event.data.data);
+            }
+        });
+
+        // DOM Ready Initializations
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearEl = document.getElementById('copyright-year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            if (window.MENU_TECH_STATE) {
+                updateUI(window.MENU_TECH_STATE);
+            }
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            if (esBtn) esBtn.addEventListener('click', () => applyLanguage('es'));
+            if (enBtn) enBtn.addEventListener('click', () => applyLanguage('en'));
+
+            document.body.addEventListener('click', (e) => {
+                let target = e.target;
+                while (target && target !== document.body) {
+                    if (target.id && (
+                        target.id === 'nav-brand' || target.id === 'hero-logo' || 
+                        target.id === 'hero-section' || target.id === 'hero-orders' || 
+                        target.id === 'hero-address' || target.id.startsWith('about-') || 
+                        target.id === 'gallery-container' || target.id.startsWith('info-') || 
+                        target.id.startsWith('footer-') || target.id === 'social-icons'
+                    )) {
+                        window.parent.postMessage({ type: 'SCROLL_TO', id: target.id }, '*');
+                        break;
+                    }
+                    target = target.parentElement;
+                }
+            });
+        });
+
+        // UI Interactions
+        const navbarToggler = document.getElementById('navbar-toggler');
+        const navMenu = document.getElementById('nav-menu');
+        const navbar = document.querySelector('.navbar');
+
+        navbarToggler.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icons = navbarToggler.querySelectorAll('.toggler-icon');
+            
+            if (navMenu.classList.contains('active')) {
+                icons[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                icons[1].style.opacity = '0';
+                icons[2].style.transform = 'rotate(-45deg) translate(6px, -6px)';
+            } else {
+                icons.forEach(icon => {
+                    icon.style.transform = 'none';
+                    icon.style.opacity = '1';
+                });
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navbarToggler.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                const icons = navbarToggler.querySelectorAll('.toggler-icon');
+                icons.forEach(icon => {
+                    icon.style.transform = 'none';
+                    icon.style.opacity = '1';
+                });
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(section);
+        });
+
+        // Active Link Highlighting
+        const sections = document.querySelectorAll("section[id]");
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            document.querySelectorAll(".nav-link").forEach(li => {
+                li.classList.remove("active");
+                if (li.getAttribute("href") === `#${current}` || (current === "" && li.getAttribute("href") === "#")) {
+                    li.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
